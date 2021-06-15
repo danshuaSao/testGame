@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>testGameClass</class>
+ <widget class="QMainWindow" name="testGameClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>771</width>
+    <height>689</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>testGame</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="6" column="0" colspan="2">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>操作</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="8" column="0">
+        <widget class="QPushButton" name="expBtn">
+         <property name="text">
+          <string>探索</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <layout class="QHBoxLayout" name="mvgroup">
+         <item>
+          <widget class="QRadioButton" name="mv1Radio">
+           <property name="text">
+            <string>地点1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="mv2Radio">
+           <property name="text">
+            <string>地点2</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="healBtn">
+         <property name="text">
+          <string>治疗</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="mineBtn">
+         <property name="text">
+          <string>挖矿</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="atkBtn">
+         <property name="text">
+          <string>攻击</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="mvBtn">
+         <property name="text">
+          <string>移动</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="bidEdit"/>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="bidBtn">
+        <property name="text">
+         <string>出价</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" rowspan="3">
+       <widget class="QTableView" name="bidTable"/>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QTableView" name="myInfo"/>
+    </item>
+    <item row="1" column="0" rowspan="3">
+     <widget class="QTableView" name="playerList"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QTableView" name="playerInfo"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QTableView" name="expTable"/>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QTextBrowser" name="tips">
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:20pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;暂无消息&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>771</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>bidBtn</tabstop>
+  <tabstop>playerInfo</tabstop>
+  <tabstop>playerList</tabstop>
+  <tabstop>expTable</tabstop>
+  <tabstop>expBtn</tabstop>
+  <tabstop>mineBtn</tabstop>
+  <tabstop>bidEdit</tabstop>
+  <tabstop>healBtn</tabstop>
+  <tabstop>mv1Radio</tabstop>
+  <tabstop>bidTable</tabstop>
+  <tabstop>mv2Radio</tabstop>
+  <tabstop>atkBtn</tabstop>
+  <tabstop>myInfo</tabstop>
+  <tabstop>mvBtn</tabstop>
+ </tabstops>
+ <resources>
+  <include location="testGame.qrc"/>
+ </resources>
+ <connections/>
+</ui>

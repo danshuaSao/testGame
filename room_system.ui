@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>room_system</class>
+ <widget class="QDialog" name="room_system">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>552</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>房间</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>385</y>
+     <width>531</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="beginBtn">
+      <property name="text">
+       <string>开始游戏</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="readyBtn">
+      <property name="text">
+       <string>准备/取消</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exitBtn">
+      <property name="text">
+       <string>退出房间</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableView" name="user_table">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>108</y>
+     <width>534</width>
+     <height>271</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableView" name="room_info_table">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>534</width>
+     <height>81</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
