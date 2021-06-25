@@ -35,7 +35,9 @@ Controller::Controller(QObject* parent)
 	connect(worker, SIGNAL(send_bid_info(std::string, std::string, std::string)), this, SIGNAL(send_bid_info(std::string, std::string, std::string)));
 	connect(worker, SIGNAL(send_message(std::string)), this, SIGNAL(send_message(std::string)));
 	
-	
+	connect(worker->get_sys().get(), SIGNAL(start_result(bool)), this, SIGNAL(start_result(bool)));
+
+
 	workerThread.start();
 	emit run();
 }

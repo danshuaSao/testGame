@@ -124,6 +124,24 @@ void room_system::get_room_info(std::string name, int id, int size, int capacity
 	ui.room_info_table->setModel(model_1);
 }
 
+void room_system::get_start_result(bool result)
+{
+	if (result)
+	{
+		accept();
+	}
+}
+
+void room_system::get_message(std::string str)
+{
+	if (str == "玩家没有全部准备"||str== "房间没有满员"||str== "你不是房主")
+	{
+		QMessageBox::warning(this, QStringLiteral("Waring"),
+			QString::fromLocal8Bit(str.data()),
+			QMessageBox::Yes);
+	}
+}
+
 void room_system::get_set_ready()
 {
 	qDebug() << "press ready";
@@ -134,7 +152,6 @@ void room_system::get_start()
 {
 	qDebug() << "press start";
 	emit start_game();
-	accept();
 }
 
 void room_system::get_exit()

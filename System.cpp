@@ -426,6 +426,7 @@ void System::sync_time(std::shared_ptr<Proto_msg>msg)
 void System::game_system_run()
 {
 	state = STATE::GAME;
+	emit start_result(true);
 }
 
 void System::update_room_info(std::shared_ptr<Proto_msg>msg)

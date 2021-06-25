@@ -49,11 +49,13 @@ signals:
 
 	void set_ready();
 	void start_game();
-
+	void start_result(bool);
 	void send_game_info_quick(basic_game_info);
 	void send_game_info_slow(basic_game_info);
 	void send_treasure(int, int, int);
 	void send_bid_info(std::string, std::string, std::string);
 	void send_message(std::string);
+
+
 
 };

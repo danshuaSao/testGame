@@ -29,7 +29,8 @@ public slots:
 	void insert_user(User_info,int);
 	void get_room_info(Room_info);
 	void get_room_info(std::string, int, int, int);
-
+	void get_start_result(bool);
+	void get_message(std::string);
 	void get_set_ready();
 	void get_start();
 	void get_exit();
