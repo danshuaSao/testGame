@@ -13,13 +13,6 @@ Controller::Controller(QObject* parent)
 
 	//监听来自ui的信号
 	connect(this, SIGNAL(run()), worker, SLOT(doRun()));
-	//connect(this, SIGNAL(getLogin(QString)), worker, SLOT(login(QString)));
-	//connect(this, SIGNAL(getJoin(int)), worker, SLOT(joinRoom(int)));
-	//connect(this, SIGNAL(getMake(QString,int)), worker, SLOT(makeRoom(QString,int)));
-	//connect(this, SIGNAL(set_ready()), worker, SLOT(get_set_ready()));
-	//connect(this, SIGNAL(start_game()), worker, SLOT(get_start_game()));
-
-
 
 	//监听来自线程的信号
 	connect(worker, SIGNAL(get_success()), this, SIGNAL(Login_suc()));
@@ -63,8 +56,8 @@ void Controller::get_start()
 void Controller::getLogin(QString str) 
 {
 	qDebug() << "controller get login";
-	//sys_object->username = str.toStdString();
-	std::string login = "login " + str.toStdString();
+	QByteArray cdata = str.toLocal8Bit();
+	std::string login = "login " + std::string(cdata);
 	input_que.push(login);
 }
 

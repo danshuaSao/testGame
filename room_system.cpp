@@ -57,7 +57,7 @@ room_system::~room_system()
 void room_system::insert_user(User_info usr,int i)
 {
 	QString name, ready;
-	name = QString::fromStdString(usr.name);
+	name = QString::fromLocal8Bit(usr.name.data());
 	if (usr.ready)
 	{
 		ready = QStringLiteral ("ÒÑ×¼±¸");

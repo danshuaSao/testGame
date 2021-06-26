@@ -13,7 +13,6 @@ Login::~Login()
 
 void Login::clicklogin()
 {
-	qDebug() << "clicklogin recieve";
 	QString name = ui.usrEdit->text();
 	emit send_name(name);
 }

@@ -270,7 +270,6 @@ void testGame::get_message(std::string message)
 {
 	QString print = QString::fromLocal8Bit(message.data());
 	ui.tips->setText("");
-	//ui.tips->setFontPointSize(20);
 	ui.tips->setText(print);
 
 }
